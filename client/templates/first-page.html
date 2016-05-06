@@ -1,0 +1,16 @@
+<ion-view>
+    <ion-nav-buttons side="primary">
+            <button class="button button-positive">
+                    Home
+            </button>
+    </ion-nav-buttons>
+    <ion-content class="_page1">
+            <h3>Bem vindo a Tela Inicial!</h3>
+        <button class="button button-positive" ng-click="firstCtrl.goToSecondPage()" >
+            Próxima Tela
+        </button>
+        <button class="button button-positive" ng-click="firstCtrl.showMessage(secondCtrl.messageContent)" >
+            Botão
+        </button>
+    </ion-content>
+</ion-view>
