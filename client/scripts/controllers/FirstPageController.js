@@ -11,4 +11,8 @@ function FirstPageController($location, $scope) {
     vm.showMessage = function() {
         confirm("Você clicou no botão");
     }
+
+    vm.goToDetalhePage = function() {
+        $location.path('/detalhe-chamada');
+    }
 }
