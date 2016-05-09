@@ -1,32 +1,58 @@
-angular.module("Estrutura-Inicial")
-	.config(config);
+var app = angular.module("Estrutura-Inicial").config(config);
 
 function config($stateProvider, $urlRouterProvider, $locationProvider) {
 	$stateProvider
-		.state('first-page', {
+		.state('app', {
+			url: '/einstein',
+			abstract: true,
+			templateUrl: 'client/templates/menu.html'
+		})
+		.state('app.first-page', {
 			url: '/first-page',
-			templateUrl: 'client/templates/first-page.html',
-			controller: 'FirstPageController as firstCtrl'
+			views: {
+				'appContent' : {
+					templateUrl: 'client/templates/first-page.html',
+					controller: 'FirstPageController as firstCtrl'
+				}
+			}
     		})
-		.state('second-page', {
+		.state('app.second-page', {
 			url: '/second-page',
-			templateUrl: 'client/templates/second-page.html',
-			controller: 'SecondPageController as secondCtrl'
+			views: {
+				'appContent': {
+					templateUrl: 'client/templates/second-page.html',
+					controller: 'SecondPageController as secondCtrl'
+				}
+			}
 		})
-		.state('third-page', {
+		.state('app.third-page', {
 			url: '/third-page',
-			templateUrl: 'client/templates/third-page.html',
-			controller: 'ThirdPageController as thirdCtrl'
+			views: {
+				'appContent': {
+					templateUrl: 'client/templates/third-page.html',
+					controller: 'ThirdPageController as thirdCtrl'
+				}
+			}
 		})
-		.state('detalhe-chamada' , {
+		.state('app.detalhe-chamada' , {
 			url: '/detalhe-chamada',
-			templateUrl: 'client/templates/detalhe-chamada.html',
-			controller: 'DetalheChamadaController as detalheCtrl'
+			views: {
+				'appContent': {
+					templateUrl: 'client/templates/detalhe-chamada.html',
+					controller: 'DetalheChamadaController as detalheCtrl'
+				}
+			}
 		})
 		;
 		$locationProvider.html5Mode({
 			enabled: true,
 			requireBase: false
 		});
-		$urlRouterProvider.otherwise('/first-page');
+		$urlRouterProvider.otherwise('/einstein/first-page');
 }
+
+app.controller('AppController', function($scope, $ionicSideMenuDelegate) {
+	$scope.toggleLeft = function() {
+	$ionicSideMenuDelegate.toggleLeft();
+	};
+})

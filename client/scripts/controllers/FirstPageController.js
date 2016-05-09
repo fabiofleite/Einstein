@@ -5,7 +5,7 @@ function FirstPageController($location, $scope) {
     var vm = this;
 
     vm.goToSecondPage = function() {
-        $location.path('/second-page');
+        $location.path('/einstein/second-page');
     }
 
     vm.showMessage = function() {
@@ -13,6 +13,6 @@ function FirstPageController($location, $scope) {
     }
 
     vm.goToDetalhePage = function() {
-        $location.path('/detalhe-chamada');
+        $location.path('/einstein/detalhe-chamada');
     }
 }

@@ -9,6 +9,6 @@ function SecondPageController($location, $scope) {
     }
 
     vm.goToThirdPage = function() {
-        $location.path('/third-page');
+        $location.path('/einstein/third-page');
     }
 }

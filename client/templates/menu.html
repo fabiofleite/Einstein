@@ -1,0 +1,26 @@
+<ion-side-menus>
+
+	<ion-side-menu-content>
+			<ion-nav-bar class="bar-dark">
+				<ion-nav-back-button class="button-icon ion-arrow-left-c"></ion-nav-back-button>
+				<ion-nav-buttons side="left">
+					<button class="button button-icon button-clear ion-navicon" ng-click="toggleLeft()"></button>
+				</ion-nav-buttons>
+			</ion-nav-bar>
+			<ion-nav-view name="appContent"></ion-nav-view>
+	</ion-side-menu-content>
+
+	<ion-side-menu side="left">
+		<ion-header-bar class="bar-assertive">
+		<h1 class="title">Opções</h1>
+		</ion-header-bar>
+		<ion-content>
+			<ion-item>Home</ion-item>
+			<ion-item>Alunos</ion-item>
+			<ion-item>Salas</ion-item>
+			<ion-item>Professores</ion-item>
+			<ion-item>Chamada</ion-item>
+			<ion-item>Configurações</ion-item>
+		</ion-content>
+	</ion-side-menu>
+</ion-side-menus>
