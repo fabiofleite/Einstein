@@ -29,6 +29,6 @@ function DetalheChamadaController($location, $scope) {
         }
     };
     $scope.isGroupShown = function() {
-        return $scope.shownGroup === true;
+        return $scope.shownGroup;
     };
 }
