@@ -5,6 +5,6 @@ function ThirdPageController($location, $scope) {
     var vm = this;
 
     vm.goToFirstPage = function() {
-        $location.path('/first-page');
+        $location.path('/einstein/first-page');
     }
 }
