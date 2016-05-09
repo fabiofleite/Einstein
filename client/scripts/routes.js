@@ -53,6 +53,6 @@ function config($stateProvider, $urlRouterProvider, $locationProvider) {
 
 app.controller('AppController', function($scope, $ionicSideMenuDelegate) {
 	$scope.toggleLeft = function() {
-	$ionicSideMenuDelegate.toggleLeft();
+		$ionicSideMenuDelegate.toggleLeft();
 	};
 })
