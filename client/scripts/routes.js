@@ -18,6 +18,11 @@ function config($stateProvider, $urlRouterProvider, $locationProvider) {
 			templateUrl: 'client/templates/third-page.html',
 			controller: 'ThirdPageController as thirdCtrl'
 		})
+		.state('detalhe-chamada' , {
+			url: '/detalhe-chamada',
+			templateUrl: 'client/templates/detalhe-chamada.html',
+			controller: 'DetalheChamadaController as detalheCtrl'
+		})
 		;
 		$locationProvider.html5Mode({
 			enabled: true,

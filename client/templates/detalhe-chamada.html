@@ -1,0 +1,29 @@
+<ion-view>
+    <ion-nav-buttons side="primary">
+        <button class="button button-positive">
+            Detalhe Chamada
+        </button>
+    </ion-nav-buttons>
+    <ion-content class="_detalhe">
+        <h3>Informações do aluno!</h3>
+        <img class="foto-aluno" src="{{aluno.foto}}">
+        <ion-list>
+            <ion-item><h2><i class="icon ion-person"></i> Nome: {{aluno.nome}}</h2></ion-item>
+            <ion-item><h2><i class="icon ion-person"></i> Matricula: {{aluno.matricula}}</h2></ion-item>
+            <ion-item><h2><i class="icon ion-information"></i> Idade: {{aluno.idade}}</h2></ion-item>
+
+            <ion-item ng-click="toggleGroup()"
+                      ng-class="{active: isGroupShown()}">
+                <i class="icon" ng-class="isGroupShown() ? 'ion-minus' : 'ion-plus'"></i>
+                &nbsp;
+                <i class="icon ion-eye-disabled"></i> Faltas: {{aluno.faltas.total}}
+            </ion-item>
+            <ion-item class="item-accordion"
+                      ng-show="isGroupShown()">
+                <ion-item>Faltas em Fisica: {{aluno.faltas.fisica}}</ion-item>
+                <ion-item>Faltas em Quimica: {{aluno.faltas.quimica}}</ion-item>
+                <ion-item>Faltas em Biologia: {{aluno.faltas.biologia}}</ion-item>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
