@@ -1,0 +1,19 @@
+button {
+	margin-top: 100px;
+}
+
+.button,
+.bar-dark .button,
+.bar-dark .button.button-icon {
+	background-color: $primary-color-1;
+	color: $primary-color-4;
+
+	&:hover {
+		background-color: $primary-color-4;
+		color: $primary-color-1;
+	}
+}
+
+span.back-text {
+	color: $primary-color-4;
+}

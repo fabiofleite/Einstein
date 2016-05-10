@@ -2,6 +2,11 @@ var app = angular.module("Estrutura-Inicial").config(config);
 
 function config($stateProvider, $urlRouterProvider, $locationProvider) {
 	$stateProvider
+		.state('login', {
+			url: '/login',
+			templateUrl: 'client/templates/login.html',
+			controller: 'LoginController as loginCtrl'
+		})
 		.state('app', {
 			url: '/einstein',
 			abstract: true,
@@ -57,7 +62,7 @@ function config($stateProvider, $urlRouterProvider, $locationProvider) {
 			enabled: true,
 			requireBase: false
 		});
-		$urlRouterProvider.otherwise('/einstein/first-page');
+		$urlRouterProvider.otherwise('/login');
 }
 
 app.controller('AppController', function($scope, $ionicSideMenuDelegate) {
