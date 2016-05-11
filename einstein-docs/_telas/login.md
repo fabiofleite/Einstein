@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: tela
 title: Tela de login
 permalink: /login/
 ---

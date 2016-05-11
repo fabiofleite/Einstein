@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: tela
 title: Projeto Einstein
 permalink: /about/
 ---
