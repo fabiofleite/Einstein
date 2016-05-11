@@ -5,18 +5,30 @@ function LoginController($location, $scope, $ionicPopup) {
     var vm = this;
 
     vm.doLogin = function() {
-		let loggedIn = Meteor.userId();
+		console.log(vm.login);
+		console.log(vm.pass);
 
-		console.log(Meteor.userId());
-
-		if(loggedIn){
-        	$location.path('/einstein/first-page');
-		}else {
-			$ionicPopup.alert({
-				title: 'Usuário ou senha incorretos!',
-				template: 'Por favor tente novamente'
-			});
+		if(!vm.login || !vm.pass){
+			Meteor.logout();
+			fail($ionicPopup);
+			return;
 		}
+		Meteor.loginWithPassword(vm.login, vm.pass, function(error) {
+			console.log(error);
+
+			if(!error){
+	        	$location.path('/einstein/first-page');
+			}else {
+				fail($ionicPopup);
+			}
+		});
     }
+
+	function fail($ionicPopup){
+		$ionicPopup.alert({
+			title: 'Usuário ou senha incorretos!',
+			template: 'Por favor tente novamente'
+		});
+	}
 
 }
