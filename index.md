@@ -1,7 +1,11 @@
 ---
-layout: default
+layout: tela
 ---
 
 **Telas**
 
-* [Login](/login "Login")
+* [Login](/einstein/login "Login")
+* [Abertura de chamada](/einstein/abertura-chamada "Abertura de chamada")
+* [Chamada](/einstein/chamada "Chamada")
+* [Cadastro de turma](/einstein/cadastro-turma "Cadastro de turma")
+* [Detalhe de chamada](/einstein/detalhe-chamada "Detalhe de chamada")

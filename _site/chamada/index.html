@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Projeto Einstein</title>
+  <title>Tela de chamada</title>
   <meta name="description" content="">
 
   <link rel="stylesheet" href="/einstein/css/main.css">
-  <link rel="canonical" href="www.ejpixel.com.br/einstein/">
+  <link rel="canonical" href="www.ejpixel.com.br/einstein/chamada/">
   <link rel="alternate" type="application/rss+xml" title="Projeto Einstein" href="www.ejpixel.com.br/einstein/feed.xml">
 </head>
 
@@ -36,15 +36,33 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <p><strong>Telas</strong></p>
+        <p>Nesta tela o professor efetuará a chamada, isto é, para cada aluno matriculado na turma, marcará se o aluno está presente ou não no momento em que a chamada é efetuada.</p>
+
+<p>Mostrará as informações:</p>
 
 <ul>
-  <li><a href="/einstein/login" title="Login">Login</a></li>
-  <li><a href="/einstein/abertura-chamada" title="Abertura de chamada">Abertura de chamada</a></li>
-  <li><a href="/einstein/chamada" title="Chamada">Chamada</a></li>
-  <li><a href="/einstein/cadastro-turma" title="Cadastro de turma">Cadastro de turma</a></li>
-  <li><a href="/einstein/detalhe-chamada" title="Detalhe de chamada">Detalhe de chamada</a></li>
+  <li>Foto do aluno</li>
+  <li>Nome do aluno</li>
+  <li>Matrícula do aluno</li>
 </ul>
+
+<p>Possuirá os botões:</p>
+
+<ul>
+  <li>Presença, para marcar que o aluno está presente</li>
+  <li>Falta, para marcar que o aluno não está presente</li>
+  <li>Informações, para visualizar informações mais detalhadas do aluno</li>
+</ul>
+
+<p><strong>Comportamento:</strong></p>
+
+<p>Ao abrir a tela, serão carregadas as informações de um aluno. Ao marcar falta/presença, serão carregadas as informações de outro aluno. Esse processo se repetirá até que todos os alunos recebam falta/preseça.</p>
+
+<p>Também será possível atribuir falta/presença arrastando a foto para a esquerda/direta (swipe card).</p>
+
+<p>Quando todos os alunos receberem falta/presença, o sistema irá para a tela de <a href="/confirmacao-chamada" title="Confirmação de chamada">Confirmação de chamada</a>.</p>
+
+<p>Caso o usuário clique no botão informação, o sistema irá para a tela <a href="/detalhe-chamada" title="Detalhe de chamada">Detalhe de chamada</a></p>
 
       </div>
     </div>
