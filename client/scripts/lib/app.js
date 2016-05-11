@@ -1,7 +1,8 @@
 angular
 .module("Estrutura-Inicial", [
     'angular-meteor',
-    'ionic'
+    'ionic',
+	'accounts.ui'
   ]);
 
 if (Meteor.isCordova) {

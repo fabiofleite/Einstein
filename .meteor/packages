@@ -19,3 +19,6 @@ insecure                # Allow all DB writes from clients (for prototyping)
 fourseven:scss
 angular
 driftyco:ionic
+accounts-base
+accounts-password
+dotansimha:accounts-ui-angular
