@@ -4,7 +4,8 @@ button {
 
 .button,
 .bar-dark .button,
-.bar-dark .button.button-icon {
+.bar-dark .button.button-icon,
+.button.button-positive {
 	background-color: $primary-color-1;
 	color: $primary-color-4;
 
