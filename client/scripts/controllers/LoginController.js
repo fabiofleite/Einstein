@@ -5,8 +5,6 @@ function LoginController($location, $scope, $ionicPopup) {
     var vm = this;
 
     vm.doLogin = function() {
-		console.log(vm.login);
-		console.log(vm.pass);
 
 		if(!vm.login || !vm.pass){
 			Meteor.logout();

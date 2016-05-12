@@ -49,7 +49,7 @@ function config($stateProvider, $urlRouterProvider, $locationProvider) {
 			}
 		})
 		.state('app.detalhe-chamada' , {
-			url: '/detalhe-chamada',
+			url: '/detalhe-chamada/:alunoId',
 			views: {
 				'appContent': {
 					templateUrl: 'client/templates/detalhe-chamada.html',

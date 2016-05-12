@@ -21,3 +21,5 @@ angular
 driftyco:ionic
 accounts-base
 accounts-password
+http
+alethes:lodash

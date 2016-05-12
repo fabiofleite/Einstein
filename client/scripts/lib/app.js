@@ -4,6 +4,9 @@ angular
     'ionic'
   ]);
 
+  //Use lodash instead of underscore
+ _ = lodash;
+
 if (Meteor.isCordova) {
   angular.element(document).on('deviceready', onReady);
 } else {

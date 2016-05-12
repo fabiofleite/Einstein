@@ -33,6 +33,9 @@ else
 	PLATFORM=${TARGET}
 fi
 
+echo "Subindo quasar... Escutando na porta 9090".
+java -jar lib/web_2.11-4.5.7-one-jar.jar -c quasar-config.json &
+
 echo "Subindo app na plataforma "${PLATFORM}" no endereço "${HOSTNAME}" porta "${PORT}"...";
 echo meteor run ${TARGET} ${BUILD_PARAM} ${HOSTNAME}:${PORT};
 meteor run ${TARGET} ${BUILD_PARAM} ${HOSTNAME}:${PORT}

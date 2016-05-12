@@ -10,12 +10,10 @@
             <ion-item ng-click="toggleGroup()" ng-class="{active: isGroupShown()}">
                 <i class="icon" ng-class="isGroupShown() ? 'ion-minus' : 'ion-plus'"></i>
                 &nbsp;
-                <i class="icon ion-eye-disabled"></i> Faltas: {{aluno.faltas.total}}
+                <i class="icon ion-eye-disabled"></i> Faltas: {{aluno.infoAluno.faltas.total}}
             </ion-item>
             <ion-item class="item-accordion" ng-show="isGroupShown()">
-                <ion-item>Faltas em Fisica: {{aluno.faltas.fisica}}</ion-item>
-                <ion-item>Faltas em Quimica: {{aluno.faltas.quimica}}</ion-item>
-                <ion-item>Faltas em Biologia: {{aluno.faltas.biologia}}</ion-item>
+                <ion-item  ng-repeat="falta in faltas">Faltas em {{falta.disciplina}}: {{falta.numFaltas}}</ion-item>
             </ion-item>
         </ion-list>
     </ion-content>

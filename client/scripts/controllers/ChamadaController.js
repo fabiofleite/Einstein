@@ -13,7 +13,7 @@ function ChamadaController($location, $scope) {
     }
 
 	vm.goToDetalhePage = function() {
-		$location.path('/einstein/detalhe-chamada');
+		$location.path('/einstein/detalhe-chamada/:'.concat(123456));
 	}
 
 }
