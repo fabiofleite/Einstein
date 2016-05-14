@@ -57,6 +57,15 @@ function config($stateProvider, $urlRouterProvider, $locationProvider) {
 				}
 			}
 		})
+		.state('app.aberturaChamada' , {
+			url: '/aberturaChamada',
+			views: {
+				'appContent': {
+					templateUrl: 'client/templates/aberturaChamada.html',
+					controller: 'AberturaChamadaController as aberturaChamadaCtrl'
+				}
+			}
+		})
 		;
 		$locationProvider.html5Mode({
 			enabled: true,
