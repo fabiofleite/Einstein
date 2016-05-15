@@ -10,24 +10,30 @@
 	}
 
 	.button-info{
+		background-color: $primary-color-0;
 		color:#0099FF;
 		font-size:200%;
-		padding:25%;
+		padding:20%;
+		padding-top: 55%;
 		margin-left: auto;
 		padding-left: 40%;
 	}
 
 	.button-check{
+		background-color: $primary-color-0;
 		color:green;
 		font-size:500%;
 		padding-right: 7%;
+		padding-top: 40%;
 		margin: auto;
 	}
 
 	.button-denied{
+		background-color: $primary-color-0;
 		color:red;
 		font-size:500%;
 		padding-left: 7%;
+		padding-top: 40%;
 		margin: auto;
 	}
 
