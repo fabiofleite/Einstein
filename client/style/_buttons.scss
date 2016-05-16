@@ -18,3 +18,28 @@ button {
 span.back-text {
 	color: $primary-color-4;
 }
+
+.button-info{
+	border: none;
+	background-color: $primary-color-0;
+	padding: 0 10%;
+	color:#0099FF;
+	font-size:200%;
+}
+
+.button-chamada{
+	border: none;
+	background-color: $primary-color-0;
+	font-size:500%;
+	margin: auto;
+}
+
+.button-check{
+	@extend .button-chamada;
+	color:green;
+}
+
+.button-denied{
+	@extend .button-chamada;
+	color:red;
+}

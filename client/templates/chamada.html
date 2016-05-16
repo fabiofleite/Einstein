@@ -1,39 +1,22 @@
 <ion-view>
     <ion-content class="_chamada">
 
-		<!-- FOTOS ALUNOS PARA SWIPE! DEFINIR UM TAMANHO PADRÃO PARA FOTOS-->
-
-		<div class="fotosAluno">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col col-100">
-						<img src="http://www.rcmsolucoes.com/Images/aluno.png" class="img-responsive">
-					</div>
-				</div>
-			</div>
+		<div class="fotos-aluno">
+			<img src="{{aluno.foto}}" class="img-responsive">
 		</div>
-
-		<!-- BOTOES CHECK, INFO E DENIED -->
-
-		<div class="container">
-			<div class="row">
-				<div class="col col-33">
-					<button class="button button-denied">
-						<i class="ion-close-circled"></i>
-					</button>
-				</div>
-				<div class="col col-33">
-					<button class="button button-info" ng-click="chamadaCtrl.goToDetalhePage()">
-						<i class="ion-information"></i>
-					</button>
-				</div>
-				<div class="col col-33">
-					<button class="button button-check">
-						<i class="ion-checkmark-circled"></i>
-					</button>
-				</div>
-			</div>
-		</div>
+		<button class="button-denied" ng-click="chamadaCtrl.markFalta()">
+			<i class="ion-close-circled"></i>
+		</button>
+		<button class="button-info" ng-click="chamadaCtrl.goToDetalhePage()">
+			<i class="ion-information"></i>
+		</button>
+		<button class="button-check" ng-click="chamadaCtrl.markPresenca()">
+			<i class="ion-checkmark-circled"></i>
+		</button>
+		<ion-list>
+			<ion-item><h2>{{aluno.nome}}</h2></ion-item>
+			<ion-item><h2>{{aluno.matricula}}</h2></ion-item>
+		</ion-list>
 
     </ion-content>
 </ion-view>

@@ -1,16 +1,39 @@
 angular.module("Estrutura-Inicial")
     .controller('ChamadaController', ChamadaController);
 
-function ChamadaController($location, $scope) {
+function ChamadaController($location, $scope, $stateParams) {
     var vm = this;
 
-    vm.goToTelaEdicao = function() {
-        confirm("Ir para tela edição");
-    }
+	let alunoId = parseInt($stateParams.alunoId.slice(1));
+	let aluno = Alunos.findOne({matricula: alunoId});
 
-    vm.goToTelaInfo = function() {
-        confirm("Ir para tela info");
-    }
+	$scope.aluno = {
+		nome: aluno.nome,
+		matricula: aluno.matricula,
+		foto: aluno.foto
+	};
+
+	vm.markFalta = function() {
+		if(alunoId == 123456){
+			alunoId = 123123;
+		}else if(alunoId == 123123){
+			alunoId = 456789;
+		}else {
+			alunoId = 123456;
+		}
+		$location.path('/einstein/chamada/:'.concat(alunoId));
+	}
+
+	vm.markPresenca = function() {
+		if(alunoId == 123456){
+			alunoId = 123123;
+		}else if(alunoId == 123123){
+			alunoId = 456789;
+		}else {
+			alunoId = 123456;
+		}
+		$location.path('/einstein/chamada/:'.concat(alunoId));
+	}
 
 	vm.goToDetalhePage = function() {
 		$location.path('/einstein/detalhe-chamada/:'.concat(123456));

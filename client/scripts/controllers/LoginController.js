@@ -15,7 +15,7 @@ function LoginController($location, $scope, $ionicPopup) {
 			console.log(error);
 
 			if(!error){
-	        	$location.path('/einstein/first-page');
+	        	$location.path('/einstein/aberturaChamada');
 			}else {
 				fail($ionicPopup);
 			}
