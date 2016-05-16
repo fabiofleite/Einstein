@@ -16,7 +16,7 @@ function AberturaChamadaController($location, $scope) {
             var turma = {};
             turma.id = i;
             $scope.turmas.push(turma);
-        }   
+        }
     };
 
     function horarios_mock(){
@@ -47,7 +47,7 @@ function AberturaChamadaController($location, $scope) {
         $scope.horarioSelecionado = horarioH;
         console.log("Horário selecionado:"+ "Inicio ("+ $scope.horarioSelecionado.inicio+")"+ "Fim ("+$scope.horarioSelecionado.fim+")");
         $scope.selecaoDeTurma = true;
-        $scope.redirecionar("/einstein/chamada", true);
+        $scope.redirecionar("/einstein/chamada/:123456", true);
     };
 
     $scope.redirecionar = function(url) {
