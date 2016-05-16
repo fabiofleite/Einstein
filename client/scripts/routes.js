@@ -40,7 +40,7 @@ function config($stateProvider, $urlRouterProvider, $locationProvider) {
 			}
 		})
 		.state('app.chamada' , {
-			url: '/chamada',
+			url: '/chamada/:alunoId',
 			views: {
 				'appContent': {
 					templateUrl: 'client/templates/chamada.html',
