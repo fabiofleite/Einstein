@@ -66,6 +66,15 @@ function config($stateProvider, $urlRouterProvider, $locationProvider) {
 				}
 			}
 		})
+		.state('app.confirmacao-chamada' , {
+			url: '/confirmacao-chamada',
+			views: {
+				'appContent': {
+					templateUrl: 'client/templates/confirmacao-chamada.html',
+					controller: 'ConfirmacaoChamadaController as confirmacaoChamadaCtrl'
+				}
+			}
+		})
 		;
 		$locationProvider.html5Mode({
 			enabled: true,
