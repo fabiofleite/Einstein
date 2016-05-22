@@ -1,0 +1,24 @@
+._lista-chamada {
+  .conteudo {
+    margin-top: 5% !important;
+  }
+  .item-checkbox-right .checkbox input,
+  .item-checkbox-right .checkbox-icon {
+    float: right;
+  }
+
+  .item-checkbox.item-checkbox-right {
+    /*the default item padding*/
+    padding: 15px;
+  }
+
+  .button-outline {
+    background-color: #990099;
+    color: white;
+  }
+
+  .checkbox .checkbox-icon::before {
+    border-color: grey;
+  }
+
+}

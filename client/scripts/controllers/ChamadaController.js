@@ -49,4 +49,8 @@ function ChamadaController($location, $scope, $stateParams) {
     $location.path('/einstein/chamada/:'.concat(alunoId));
   }
 
+	vm.goToListaPage = function() {
+		$location.path('/einstein/lista-chamada');
+	}
+
 }

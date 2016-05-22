@@ -66,16 +66,27 @@ function config($stateProvider, $urlRouterProvider, $locationProvider) {
 				}
 			}
 		})
+
+		.state('app.lista-chamada' , {
+			url: '/lista-chamada',
+			views: {
+				'appContent': {
+                    templateUrl: 'client/templates/lista-chamada.html',
+                    controller: 'ListaChamadaController as listaChamadaCtrl'
+                }
+                }
+                })
+
 		.state('app.matricula' , {
 			url: '/matricula',
 			views: {
 				'appContent': {
 					templateUrl: 'client/templates/matricula.html',
 					controller: 'MatriculaController as matriculaCtrl'
+
 				}
 			}
 		})
-		;
 		$locationProvider.html5Mode({
 			enabled: true,
 			requireBase: false
