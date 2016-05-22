@@ -1,4 +1,4 @@
-._confirmacao-chamada {
+._lista-chamada {
   .conteudo {
     margin-top: 5% !important;
   }
@@ -12,8 +12,9 @@
     padding: 15px;
   }
 
-  .cancelar {
-    border-right: 1px solid white;
+  .button-outline {
+    background-color: #990099;
+    color: white;
   }
 
   .checkbox .checkbox-icon::before {

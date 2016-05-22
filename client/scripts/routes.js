@@ -67,12 +67,12 @@ function config($stateProvider, $urlRouterProvider, $locationProvider) {
 			}
 		})
 
-		.state('app.confirmacao-chamada' , {
-			url: '/confirmacao-chamada',
+		.state('app.lista-chamada' , {
+			url: '/lista-chamada',
 			views: {
 				'appContent': {
-                    templateUrl: 'client/templates/confirmacao-chamada.html',
-                    controller: 'ConfirmacaoChamadaController as confirmacaoChamadaCtrl'
+                    templateUrl: 'client/templates/lista-chamada.html',
+                    controller: 'ListaChamadaController as listaChamadaCtrl'
                 }
                 }
                 })

@@ -1,7 +1,7 @@
 angular.module("Estrutura-Inicial")
-    .controller('ConfirmacaoChamadaController', ConfirmacaoChamadaController);
+    .controller('ListaChamadaController', ListaChamadaController);
 
-function ConfirmacaoChamadaController($location, $scope, $stateParams) {
+function ListaChamadaController($location, $scope, $stateParams) {
     var vm = this;
     //let alunoId = parseInt($stateParams.alunoId.slice(1));
     let aluno = Alunos.findOne({matricula: 123456});
