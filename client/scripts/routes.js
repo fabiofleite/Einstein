@@ -66,16 +66,27 @@ function config($stateProvider, $urlRouterProvider, $locationProvider) {
 				}
 			}
 		})
+
 		.state('app.confirmacao-chamada' , {
 			url: '/confirmacao-chamada',
 			views: {
 				'appContent': {
-					templateUrl: 'client/templates/confirmacao-chamada.html',
-					controller: 'ConfirmacaoChamadaController as confirmacaoChamadaCtrl'
+                    templateUrl: 'client/templates/confirmacao-chamada.html',
+                    controller: 'ConfirmacaoChamadaController as confirmacaoChamadaCtrl'
+                }
+                }
+                })
+
+		.state('app.matricula' , {
+			url: '/matricula',
+			views: {
+				'appContent': {
+					templateUrl: 'client/templates/matricula.html',
+					controller: 'MatriculaController as matriculaCtrl'
+
 				}
 			}
 		})
-		;
 		$locationProvider.html5Mode({
 			enabled: true,
 			requireBase: false

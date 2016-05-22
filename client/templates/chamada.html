@@ -1,22 +1,30 @@
 <ion-view>
     <ion-content class="_chamada">
 
-		<div class="fotos-aluno">
-			<img src="{{aluno.foto}}" class="img-responsive">
-		</div>
-		<button class="button-denied" ng-click="chamadaCtrl.markFalta()">
-			<i class="ion-close-circled"></i>
-		</button>
-		<button class="button-info" ng-click="chamadaCtrl.goToDetalhePage()">
-			<i class="ion-information"></i>
-		</button>
-		<button class="button-check" ng-click="chamadaCtrl.markPresenca()">
-			<i class="ion-checkmark-circled"></i>
-		</button>
-		<ion-list>
-			<ion-item><h2>{{aluno.nome}}</h2></ion-item>
-			<ion-item><h2>{{aluno.matricula}}</h2></ion-item>
-		</ion-list>
+      <div class="fotos-aluno">
+  			<img src="{{aluno.foto}}" class="img-responsive">
+  		</div>
+      <ion-list>
+        <ion-item><h2>{{aluno.nome}}</h2></ion-item>
+        <ion-item><h2>{{aluno.matricula}}</h2></ion-item>
+      </ion-list>
+
+      <button class="button-back" ng-click="chamadaCtrl.back()">
+  			<i class="ion-refresh"></i>
+  		</button>
+
+  		<button class="button-denied" ng-click="chamadaCtrl.markFalta()">
+  			<i class="ion-close-round"></i>
+  		</button>
+
+  		<button class="button-check" ng-click="chamadaCtrl.markPresenca()">
+  			<i class="ion-checkmark-round"></i>
+  		</button>
+
+      <button class="button-info" ng-click="chamadaCtrl.goToDetalhePage()">
+  			<i class="ion-information"></i>
+  		</button>
+
 
     </ion-content>
 </ion-view>

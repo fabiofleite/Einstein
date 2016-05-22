@@ -19,19 +19,28 @@ span.back-text {
 	color: $primary-color-4;
 }
 
-.button-info{
+.button-minor{
 	border: none;
-	background-color: $primary-color-0;
-	padding: 0 10%;
-	color:#0099FF;
-	font-size:200%;
+	background-color: white;
+	width:40px;
+	height:40px;
+	border-radius:50px;
+	font-size:180%;
+	text-align:center;
+	 border: 3px solid #A8A8A8 ;
 }
 
 .button-chamada{
 	border: none;
-	background-color: $primary-color-0;
-	font-size:500%;
+	background-color: white;
+	width:80px;
+	height:80px;
+	border-radius:50px;
+	font-size:300%;
 	margin: auto;
+	border-style: solid;
+	text-align:center;
+ border: 3px solid #A8A8A8 ;
 }
 
 .button-check{
@@ -42,4 +51,12 @@ span.back-text {
 .button-denied{
 	@extend .button-chamada;
 	color:red;
+}
+.button-back{
+	@extend .button-minor;
+	color:orange;
+}
+.button-info{
+	@extend .button-minor;
+	color:#0099FF;
 }

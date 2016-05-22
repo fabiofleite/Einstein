@@ -1,5 +1,7 @@
 ._confirmacao-chamada {
-
+  .conteudo {
+    margin-top: 5% !important;
+  }
   .item-checkbox-right .checkbox input,
   .item-checkbox-right .checkbox-icon {
     float: right;
@@ -9,4 +11,13 @@
     /*the default item padding*/
     padding: 15px;
   }
+
+  .cancelar {
+    border-right: 1px solid white;
+  }
+
+  .checkbox .checkbox-icon::before {
+    border-color: grey;
+  }
+
 }
