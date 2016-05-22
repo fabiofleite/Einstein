@@ -6,7 +6,9 @@ function AcompanhamentoController($location, $scope, $ionicScrollDelegate) {
 	let turmas = _.map(Turmas.find().fetch(), function(r){
 		return {
 			turma: r,
-			faltas: {aluno: "fulano de tal", presenca: "80%"}
+			faltas: [
+				{aluno: "fulano de tal "+r.turmaId, presenca: "80%"}
+			]
 		};
 	});
 
@@ -14,15 +16,16 @@ function AcompanhamentoController($location, $scope, $ionicScrollDelegate) {
 
 	console.log(turmas);
 
-	$scope.toggleGroup = function() {
-		if ($scope.isGroupShown()) {
+	$scope.toggleGroup = function(group) {
+		console.log(group);
+		if ($scope.isGroupShown(group)) {
 			$scope.shownGroup = null;
 		} else {
-			$scope.shownGroup = true;
+			$scope.shownGroup = group;
 			$ionicScrollDelegate.scrollBottom();
 		}
 	};
-	$scope.isGroupShown = function() {
-		return $scope.shownGroup;
+	$scope.isGroupShown = function(group) {
+		return $scope.shownGroup === group;
 	};
 };
