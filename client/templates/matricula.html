@@ -1,0 +1,49 @@
+<ion-view view-title="Matricula de aluno">
+    <ion-content class="_matricula-aluno">
+    	<div class="conteudo">
+    		<div class="row">
+    			<div class="col col-100">
+    				<form>
+    					<div class="row">
+    						<div class="col col-100">
+		    						<img class="foto-aluno" src="https://cdn0.iconfinder.com/data/icons/PRACTIKA/256/user.png">
+	    					</div>
+    					</div>
+    					<div class="row">
+    						<div class="col col-100">
+			    				<div class="matricula-input-text">
+			    					<h4>Nome: *</h4>
+			    					<input class="matricula-input" type="text" placeholder="Insira o nome do aluno" ng-model="aluno.nome" />
+			    				</div>
+			    			</div>
+			    		</div>
+              <div class="row">
+    						<div class="col col-100">
+			    				<div class="matricula-input-text">
+			    					<h4>Matricula: *</h4>
+			    					<input class="matricula-input" type="number" placeholder="Insira a matricula do aluno" ng-model="aluno.matricula" />
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="row">
+    						<div class="col col-100">
+			    				<div class="matricula-input-text">
+			    					<h4>Data de nascimento: *</h4>
+			    					<input class="matricula-input" maxlength="10" type="text" placeholder="Insira a idade do aluno"
+                    ng-change="formatarData()" ng-model="aluno.idade" />
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="row">
+			    			<div class="col col-50">
+	    						<div class="save-button">
+	    							<button class="button" ng-click="salvarMatricula()">Salvar</button>
+	    						</div>
+	    					</div>
+	    				</div>
+    				</form>
+    			</div>
+    		</div>
+    	</div>
+    </ion-content>
+</ion-view>

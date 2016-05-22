@@ -66,6 +66,15 @@ function config($stateProvider, $urlRouterProvider, $locationProvider) {
 				}
 			}
 		})
+		.state('app.matricula' , {
+			url: '/matricula',
+			views: {
+				'appContent': {
+					templateUrl: 'client/templates/matricula.html',
+					controller: 'MatriculaController as matriculaCtrl'
+				}
+			}
+		})
 		;
 		$locationProvider.html5Mode({
 			enabled: true,
