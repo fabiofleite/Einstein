@@ -16,38 +16,41 @@ function ChamadaController($location, $scope, $stateParams) {
 	vm.markFalta = function() {
 		if(alunoId == 123456){
 			alunoId = 123123;
+			$location.path('/einstein/chamada/:'.concat(alunoId));
 		}else if(alunoId == 123123){
 			alunoId = 456789;
+			$location.path('/einstein/chamada/:'.concat(alunoId));
 		}else {
-			alunoId = 123456;
+			$location.path('/einstein/lista-chamada');
 		}
-		$location.path('/einstein/chamada/:'.concat(alunoId));
 	}
 
 	vm.markPresenca = function() {
 		if(alunoId == 123456){
 			alunoId = 123123;
+			$location.path('/einstein/chamada/:'.concat(alunoId));
 		}else if(alunoId == 123123){
 			alunoId = 456789;
+			$location.path('/einstein/chamada/:'.concat(alunoId));
 		}else {
-			alunoId = 123456;
+			$location.path('/einstein/lista-chamada');
 		}
-		$location.path('/einstein/chamada/:'.concat(alunoId));
 	}
 
 	vm.goToDetalhePage = function() {
 		$location.path('/einstein/detalhe-chamada/:'.concat(123456));
 	}
-  vm.back = function(){
-    if(alunoId == 123456){
-      alunoId = 123456;
-    }else if(alunoId == 123123){
-      alunoId = 123456;
-    }else if(alunoId==456789){
-      alunoId = 123123;
-    }
-    $location.path('/einstein/chamada/:'.concat(alunoId));
-  }
+
+	vm.back = function(){
+	if(alunoId == 123456){
+	  alunoId = 123456;
+	}else if(alunoId == 123123){
+	  alunoId = 123456;
+	}else if(alunoId==456789){
+	  alunoId = 123123;
+	}
+	$location.path('/einstein/chamada/:'.concat(alunoId));
+	}
 
 	vm.goToListaPage = function() {
 		$location.path('/einstein/lista-chamada');
