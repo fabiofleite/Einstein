@@ -7,7 +7,9 @@ function AcompanhamentoController($location, $scope, $ionicScrollDelegate) {
 		return {
 			turma: r,
 			faltas: [
-				{aluno: "fulano de tal "+r.turmaId, presenca: "80%"}
+				{aluno: "Fulano de tal ", presenca: "80%"},
+				{aluno: "Joãozinho ", presenca: "75%"},
+				{aluno: "Astolvo ", presenca: "50%"}
 			]
 		};
 	});

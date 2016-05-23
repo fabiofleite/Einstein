@@ -9,7 +9,12 @@
 				</div>
 				<ion-item class="item-accordion" ng-show="isGroupShown(turma)">
 					<ion-item ng-repeat="falta in turma.faltas">
-						{{falta.aluno}} -  {{falta.presenca}}
+						<div class="nome">
+							{{falta.aluno}}
+						</div>
+						<div class="presenca">
+							{{falta.presenca}}
+						</div>
 					</ion-item>
 				</ion-item>
 			</ion-item>

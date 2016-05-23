@@ -1,0 +1,30 @@
+._acompanhamento {
+
+	margin-top: 20px;
+
+	.item-accordion.item {
+		padding: 0px;
+	}
+
+	.item:hover {
+		color: $primary-color-4;
+		background-color: $primary-color-2;
+	}
+
+	.item.active {
+		color: $primary-color-4;
+		background-color: $primary-color-2;
+	}
+
+	.nome {
+		float: left;
+	}
+
+	.presenca {
+		float: right;
+		// color: $primary-color-2;
+		// background-color: $primary-color-4;
+		// border: 1px solid $primary-color-2;
+		// border-radius: 50%;
+	}
+}
