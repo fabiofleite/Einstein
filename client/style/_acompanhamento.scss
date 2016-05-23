@@ -6,25 +6,34 @@
 		padding: 0px;
 	}
 
-	.item:hover {
-		color: $primary-color-4;
-		background-color: $primary-color-2;
+	.item {
+
+		padding: 0px;
+
+		&:hover {
+			color: $primary-color-4;
+			background-color: $primary-color-2;
+		}
+
+		&.active {
+			color: $primary-color-4;
+			background-color: $primary-color-2;
+		}
 	}
 
-	.item.active {
-		color: $primary-color-4;
-		background-color: $primary-color-2;
+	.list-item {
+		padding: 10px 10px;
 	}
 
 	.nome {
 		float: left;
+		@extend .list-item;
 	}
 
 	.presenca {
 		float: right;
-		// color: $primary-color-2;
-		// background-color: $primary-color-4;
-		// border: 1px solid $primary-color-2;
-		// border-radius: 50%;
+		@extend .list-item;
+		color: $primary-color-2;
+		background-color: $primary-color-3;
 	}
 }
