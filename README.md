@@ -1,4 +1,4 @@
-# einstein   --- Em construção - Reeditando
+# einstein   --- Descritivo
 
 Desenvolvimento de aplicativo com versão web(acessível através de navegador) e versão para dispositivos móveis. O aplicativo permitirá ao professor registrar a presença dos alunos no momento da aula, aos alunos acompanhar sua frequência, e aos demais colaboradores do projeto Einstein competentes verificar assiduidade dos alunos a partir de relatórios gerados pelo sistema, com informações devidamente organizadas e apresentadas de forma que permita a identificação de problemas relacionados aos alunos, professores ou demais envolvidos.
 
